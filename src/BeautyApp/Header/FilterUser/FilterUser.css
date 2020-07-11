@@ -1,0 +1,11 @@
+.right.menu.filterUser{
+    display: inline !important;
+    float: right;
+}
+
+
+.right.menu.filterUser .item{
+    display: inline !important;
+}
+
+

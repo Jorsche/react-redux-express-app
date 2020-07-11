@@ -1,0 +1,18 @@
+.NavBar {
+ width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+div.right.menu div.item.Login{
+    padding:0;
+    margin: 0;
+}
+
+div.right.menu div.item.Signup{
+    padding:0;
+    margin-left: 5px;
+
+
+}

@@ -1,0 +1,13 @@
+.Cards{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+.Cards div.ui.card{
+    width:10rem;
+    height: 10rem;
+    margin: 0;
+
+}

@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./BeautyApp/Header/Header";
+import Main from "./BeautyApp/Main/Main";
+import {connect} from "react-redux";
+import Logout from "./BeautyApp/Logout/Logout";
+import Nav from "./Nav";
+import StepExampleOrdered from "./testStep";
+import FormExampleForm from "./testForm";
+import TopContainer from "./testApp/topContainer/topContainer";
+import BottomContainer from "./testApp/bottomContainer/bottomContainer";
+import FootContainer from "./testApp/footerContainer/footContainer";
 
-function App() {
-  return (
+
+function App({page}) {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TopContainer/>
+    <BottomContainer/>
+    <FootContainer/>
     </div>
   );
 }
+const mapStateToProps =({navBarReducer})=>({
+    page: navBarReducer.navBar
+})
+export default connect(mapStateToProps,null)(App);
+;
 
-export default App;
+//
+// <div className="App">
+//     <Header/>
+//     {page=== "home" && <Main/>}
+//     {page=== "messages" && <Main/>}
+//     {page=== "friends" && <Main/>}
+//     {page=== "logout" && <Logout/>}
+// </div>

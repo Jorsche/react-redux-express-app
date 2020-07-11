@@ -1,0 +1,9 @@
+.ui.secondary.NavBar.menu {
+    display: inline
+}
+
+
+.ui.secondary.NavBar.menu .item{
+    display: inline;
+
+}

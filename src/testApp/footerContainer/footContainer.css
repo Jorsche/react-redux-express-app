@@ -1,0 +1,12 @@
+.footContainer{
+    height: 200px;
+    background: #1b1c1d;
+    color: white;
+}
+
+#root > div > div.footContainer > div{
+    width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 40px !important;
+}
